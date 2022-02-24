@@ -1,3 +1,9 @@
 [submodule "src/temoto"]
 	path = src/temoto
 	url = https://github.com/temoto-telerobotics/temoto
+[submodule "src/jackal"]
+	path = src/jackal
+	url = https://github.com/jackal/jackal.git
+[submodule "src/jackal_robot"]
+	path = src/jackal_robot
+	url = https://github.com/jackal/jackal_robot.git

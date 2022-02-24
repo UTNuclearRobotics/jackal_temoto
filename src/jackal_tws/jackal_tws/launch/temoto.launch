@@ -5,6 +5,7 @@
   <arg name="extra_wake_words" default="everybody"/>
   <arg name="actions_path" default="$(find jackal_tws)/../temoto_actions" />
   <arg name="component_config_base_path" default="$(find jackal_tws)/config" />
+  <arg name="robot_config_base_path" default="$(find jackal_tws)/config" />
   <arg name="respawn_nodes" default="true" />
  
   <env name="ROSCONSOLE_FORMAT" value="[${function}] ${message}" />
@@ -32,5 +33,12 @@
           args="--wake-word $(arg temoto_namespace) 
                 --actions-path $(arg actions_path) 
                 --extra-wake-words $(arg extra_wake_words)" />
+
+    <node name="temoto_robot_manager" 
+          pkg="temoto_robot_manager" 
+          type="temoto_robot_manager" 
+          output="screen" 
+          respawn="$(arg respawn_nodes)"
+          args="--config-base-path $(arg robot_config_base_path)"/>
   </group>
 </launch>
