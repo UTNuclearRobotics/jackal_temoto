@@ -19,9 +19,3 @@ roslaunch ta_initialize_robot invoke_action.launch wake_word:=jack
 ```
 
 (Dont forget to source your workpace)
-```bash
-stemoto 
-or 
-source ~/jackal_temoto/devel/setup.bash
-```
-
