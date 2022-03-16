@@ -1,0 +1,25 @@
+{
+    "name": "TaNavigationArl",
+    "package_name": "ta_navigation_arl",
+    "description": "ta_navigation_arl",
+    "effect": "synchronous",
+    "input_parameters": {
+        "ref_frame": {
+            "pvf_type": "string"
+        },
+        "pose_2d": {
+            "x": {
+                "pvf_type": "number"
+            },
+            "y": {
+                "pvf_type": "number"
+            },
+            "yaw": {
+                "pvf_type": "number"
+            }
+        },
+        "robot_name": {
+            "pvf_type": "string"
+        }
+    }
+}
