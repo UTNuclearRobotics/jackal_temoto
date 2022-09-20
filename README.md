@@ -13,9 +13,14 @@ Launch TeMoto
 ```bash
 roslaunch jackal_tws temoto.launch temoto_namespace:=jack
 ```
-In another terminal we can load the robot:
+If you want to load the robot using TeMoto, run in another terminal:
 ```bash
 roslaunch ta_initialize_robot invoke_action.launch wake_word:=jack
 ```
+If you want to bring up the robot using Phonex, please refer to https://wikis.utexas.edu/display/NRG/AFC+Jackal to see how to connect and run Jackal.
 
-(Dont forget to source your workpace)
+The ta_navigation_arl actions, works as a wrapper to send goal poses using TeMoto to Phoenix navigation. 
+
+```bash
+roslaunch ta_navigate_arl invoke_action.launch wake_word:=jack
+```
